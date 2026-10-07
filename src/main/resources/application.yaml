@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: whatsapp-chatbot
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/whatsapp_chatbot
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        jdbc:
+          time_zone: UTC
+
+
+server:
+  port: 8080
